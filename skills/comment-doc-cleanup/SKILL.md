@@ -1,15 +1,6 @@
 ---
 name: comment-doc-cleanup
-description: |
-  Sweeps a whole project (or a given directory) for low-value comments, docstrings, README and doc
-  prose: deletes comments that restate the code or say only what the name already says, boilerplate,
-  empty adjectives, closing summaries and placeholders that will never be done, and rewrites what is
-  left into specific wording, so comments and docs get shorter and more concrete without losing a
-  fact. Use when the user says "clean up comments", "comments are too verbose", "remove the
-  slop/boilerplate", "the docs read like AI", "清理注释", "排查注释和文档", "注释太啰嗦", "去掉废话/套话",
-  "文档像 AI 写的", or asks for a pass over every comment or doc in the repo. Edits comments and prose
-  only, never logic. For duplicated code, dead code or over-abstraction in a diff use code-simplify;
-  the tone of an essay or post is a prose-editing job, not this skill's.
+description: Sweep a project or directory to delete low-value comments, boilerplate, and AI-like doc prose, and tighten what remains without losing facts or changing logic. Use when asked to "clean up comments", "remove boilerplate", "the docs read like AI", "清理注释", "排查注释和文档", "注释太啰嗦", "去掉废话/套话", or "文档像 AI 写的". Comments and docs only — use code-simplify for code diffs.
 ---
 
 # Comment & doc cleanup

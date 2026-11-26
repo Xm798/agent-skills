@@ -1,14 +1,6 @@
 ---
 name: code-simplify
-description: |
-  Reviews changed code for reuse, simplification, efficiency, altitude (root-cause depth) and
-  comment problems, then applies the fixes without changing behavior. Fans the five angles out to
-  parallel subagents when the agent has a subagent tool, otherwise works through them inline in one
-  pass. Use when the user says "simplify", "clean up this diff", "tidy the changes before I commit",
-  "精简一下改动", "清理这次的代码", "review for duplication / over-engineering", or right after
-  finishing a feature. Accepts an optional target: a PR number, branch, commit range or path.
-  Quality only: it does not hunt for correctness bugs; use a code-review skill for that. For a
-  sweep of every comment and doc in a project use comment-doc-cleanup.
+description: Review changed code for reuse, simplification, efficiency, altitude, and comment quality, then apply fixes without changing behavior (accepts an optional PR, branch, commit range, or path). Use when asked to "simplify", "clean up this diff", "tidy before commit", "精简一下改动", "清理这次的代码", or right after finishing a feature. Quality only — use code-review for bugs and comment-doc-cleanup for whole-project comment/doc sweeps.
 ---
 
 # Code simplify
